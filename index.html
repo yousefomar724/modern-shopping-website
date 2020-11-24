@@ -1,0 +1,575 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Shopping Website</title>
+    <!--=== CSS ===-->
+    <link rel="stylesheet" href="assets/css/style.css">
+
+    <!--== LIGHT SLIDER CSS ==-->
+    <link rel="stylesheet" href="assets/css/lightslider.css">
+
+    <!--JQUERY-->
+    <script src="assets/js/jquery.js"></script>
+
+    <!--== LIGHT SLIDER JS ==-->
+    <SCRIPT src="assets/js/lightslider.js"></SCRIPT>
+
+    <!--=== FAVICON ===-->
+    <link rel="icon" href="assets/img/fav-icon.png">
+
+    <!--=== BOX ICONS ===-->
+    <link href='https://unpkg.com/boxicons@2.0.7/css/boxicons.min.css' rel='stylesheet'>
+
+    <!--=== NORMALIZE ===-->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.css" integrity="sha512-oHDEc8Xed4hiW6CxD7qjbnI+B07vDdX7hEPTvn9pSZO1bcRqHp8mj9pyr+8RVC2GmtEfI2Bi9Ke9Ass0as+zpg==" crossorigin="anonymous" />
+</head>
+<body>
+    <!--== NAV ==-->
+    <nav>
+        <div class="social__container">
+            <div class="social__links">
+                <a href="#">
+                    <i class="bx bxl-facebook"></i>
+                </a>
+                <a href="#">
+                    <i class="bx bxl-twitter"></i>
+                </a>
+                <a href="#">
+                    <i class="bx bxl-youtube"></i>
+                </a>
+                <a href="#">
+                    <i class="bx bxl-instagram"></i>
+                </a>
+            </div>
+            <div class="social__phone">
+                <span>Call me +2001100124479</span>
+            </div>
+        </div>
+
+        <!--== MENU BAR ==-->
+        <div class="menu-bar">
+            <a href="#" class="logo">
+                <img src="assets/img/logo.png" alt="logo">
+            </a>
+
+            <div class="toggle">
+                <i class="bx bx-menu"></i>
+                <i class="bx bx-x"></i>
+            </div>
+
+            <ul class="menu__categories">
+                <li><a href="#">Home</a></li>
+                <li>
+                    <a href="#">Men</a>
+                    <span class="sale">Sale</span>
+                </li>
+                <li><a href="#">Women</a></li>
+                <li><a href="#">Kids</a></li>
+                <li><a href="#">Shop</a></li>
+            </ul>
+
+            <div class="menu__icons">
+                <a href="javascript:void(0);" class="search">
+                    <i class="bx bx-search"></i>
+                </a>
+                <a href="javascript:void(0);" class="user">
+                    <i class="bx bx-user"></i>
+                </a>
+                <a href="javascript:void(0);">
+                    <i class="bx bx-cart">
+                        <span class="num-cart-product">0</span>
+                    </i>
+                </a>
+            </div>
+        </div>
+    </nav>
+
+    <!--== SEARCH BAR ==-->
+    <div class="search-bar">
+        <div class="search__input">
+            <input type="text" placeholder="Search For Product">
+            <a href="javascript:void(0);" class="search__cancel">
+                <i class="bx bx-x"></i>
+            </a>
+        </div>
+    </div>
+
+    <!--== LOGIN & SIGNUP ==-->
+    <div class="form">
+        <!--Login-->
+        <div class="login__form">
+            <a href="javascript:void(0);" class="form__cancel">
+                <i class="bx bx-x"></i>
+            </a>
+            <strong>Log In</strong>
+            <form action="#">
+                <input type="email" placeholder="Example@gmail.com" name="email" required>
+                <input type="password" placeholder="Password" name="password" required>
+                <input type="submit" value="Log In">
+            </form>
+
+            <div class="form__btns">
+                <a href="javascript:void(0);" class="forget">Forgot Your Password?</a>
+                <a href="javascript:void(0);" class="sign-up-btn">Create an Account</a>
+            </div>
+        </div>
+
+        <!--SignUp-->
+        <div class="signup__form">
+            <a href="javascript:void(0);" class="form__cancel">
+                <i class="bx bx-x"></i>
+            </a>
+            <strong>Sign Up</strong>
+            <form action="#">
+                <input type="text" placeholder="Full Name" name="fullname" required>
+                <input type="email" placeholder="Example@gmail.com" name="email" required>
+                <input type="password" placeholder="Password" name="password" required>
+                <input type="submit" value="Sign Up">
+            </form>
+
+            <div class="form__btns">
+                <a href="javascript:void(0);" class="already-account">Already Have an Account?</a>
+            </div>
+        </div>
+    </div>
+
+    <!--== FULL PAGE SLIDER ==-->
+    <ul id="adaptive" class="cs-hidden">
+
+        <!--Slide 1-->
+        <li class="item-a">
+            <div class="full-slider-box f-slide-1">
+                <div class="slider-text-container">
+        
+                    <div class="f-slider-text">
+                        <span>Limited offer</span>
+                        <strong>30% off<br> with <font>promo code</font></strong>
+                        <a href="#" class="f-slider__btn">Shop Now</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </li>
+
+        <!--Slide 2-->
+        <li class="item-b">
+            <div class="full-slider-box f-slide-2">
+                <div class="slider-text-container">
+        
+                    <div class="f-slider-text">
+                        <span>Limited offer</span>
+                        <strong>30% off<br> with <font>promo code</font></strong>
+                        <a href="#" class="f-slider__btn">Shop Now</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </li>
+
+        <!--Slide 3-->
+        <li class="item-d">
+            <div class="full-slider-box f-slide-4">
+                <div class="slider-text-container">
+        
+                    <div class="f-slider-text">
+                        <span>Limited offer</span>
+                        <strong>30% off<br> with <font>promo code</font></strong>
+                        <a href="#" class="f-slider__btn">Shop Now</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </li>
+
+    </ul>
+
+    <!--== FEATURED CATEGORIES ==-->
+    <div class="feature__heading">
+        <h2>Featured Categories</h2>
+    </div>
+
+    <ul id="autoWidth" class="cs-hidden">
+
+        <!--Item-1-->
+        <li class="item">
+            <div class="feature__box">
+                <a href="#">
+                    <img src="assets/img/feature_1.jpg" alt="">
+                </a>
+            </div>
+
+            <span>T-Shirt</span>
+        </li>
+
+        <!--Item-2-->
+        <li class="item">
+            <div class="feature__box">
+                <a href="#">
+                    <img src="assets/img/feature_2.jpg" alt="">
+                </a>
+            </div>
+
+            <span>T-Shirt</span>
+        </li>
+
+        <!--Item-3-->
+        <li class="item">
+            <div class="feature__box">
+                <a href="#">
+                    <img src="assets/img/feature_3.jpg" alt="">
+                </a>
+            </div>
+
+            <span>T-Shirt</span>
+        </li>
+
+        <!--Item-4-->
+        <li class="item">
+            <div class="feature__box">
+                <a href="#">
+                    <img src="assets/img/feature_4.jpg" alt="">
+                </a>
+            </div>
+
+            <span>T-Shirt</span>
+        </li>
+
+        <!--Item-5-->
+        <li class="item">
+            <div class="feature__box">
+                <a href="#">
+                    <img src="assets/img/feature_5.jpg" alt="">
+                </a>
+            </div>
+
+            <span>T-Shirt</span>
+        </li>
+
+        <!--Item-6-->
+        <li class="item">
+            <div class="feature__box">
+                <a href="#">
+                    <img src="assets/img/feature_6.jpg" alt="">
+                </a>
+            </div>
+
+            <span>T-Shirt</span>
+        </li>
+    </ul>
+
+    <!--== NEW ARRIVALS ==-->
+        <section class="new-arrival">
+            <div class="arrival__heading">
+                <strong>New Arrivals</strong>
+                <p>We Provide You new Design Fashion Clothes</p>
+            </div>
+
+            <div class="product__container">
+                <!--Product-1-->
+                <div class="product__box">
+                    <div class="product__img">
+                        <a href="#" class="add-cart">
+                            <i class="bx bx-cart"></i>
+                        </a>
+    
+                        <img src="assets/img/p-1.png" alt="">
+                    </div>
+    
+                    <div class="product__details">
+                        <a href="#" class="product__name">Drawstring T-Short</a>
+                        <span class="product__price">$22.00</span>
+                    </div>
+                </div>
+    
+                <!--Product-2-->
+                <div class="product__box">
+                    <div class="product__img">
+                        <a href="#" class="add-cart">
+                            <i class="bx bx-cart"></i>
+                        </a>
+    
+                        <img src="assets/img/p-2.png" alt="">
+                    </div>
+    
+                    <div class="product__details">
+                        <a href="#" class="product__name">Drawstring T-Short</a>
+                        <span class="product__price">$22.00</span>
+                    </div>
+                </div>
+    
+                <!--Product-3-->
+                <div class="product__box">
+                    <div class="product__img">
+                        <a href="#" class="add-cart">
+                            <i class="bx bx-cart"></i>
+                        </a>
+    
+                        <img src="assets/img/p-3.png" alt="">
+                    </div>
+    
+                    <div class="product__details">
+                        <a href="#" class="product__name">Drawstring T-Short</a>
+                        <span class="product__price">$22.00</span>
+                    </div>
+                </div>
+    
+                <!--Product-4-->
+                <div class="product__box">
+                    <div class="product__img">
+                        <a href="#" class="add-cart">
+                            <i class="bx bx-cart"></i>
+                        </a>
+    
+                        <img src="assets/img/p-4.png" alt="">
+                    </div>
+    
+                    <div class="product__details">
+                        <a href="#" class="product__name">Drawstring T-Short</a>
+                        <span class="product__price">$22.00</span>
+                    </div>
+                </div>
+    
+                <!--Product-5-->
+                <div class="product__box">
+                    <div class="product__img">
+                        <a href="#" class="add-cart">
+                            <i class="bx bx-cart"></i>
+                        </a>
+    
+                        <img src="assets/img/p-5.png" alt="">
+                    </div>
+    
+                    <div class="product__details">
+                        <a href="#" class="product__name">Drawstring T-Short</a>
+                        <span class="product__price">$22.00</span>
+                    </div>
+                </div>
+    
+                <!--Product-6-->
+                <div class="product__box">
+                    <div class="product__img">
+                        <a href="#" class="add-cart">
+                            <i class="bx bx-cart"></i>
+                        </a>
+    
+                        <img src="assets/img/p-6.png" alt="">
+                    </div>
+    
+                    <div class="product__details">
+                        <a href="#" class="product__name">Drawstring T-Short</a>
+                        <span class="product__price">$22.00</span>
+                    </div>
+                </div>
+    
+                <!--Product-7-->
+                <div class="product__box">
+                    <div class="product__img">
+                        <a href="#" class="add-cart">
+                            <i class="bx bx-cart"></i>
+                        </a>
+    
+                        <img src="assets/img/p-7.png" alt="">
+                    </div>
+    
+                    <div class="product__details">
+                        <a href="#" class="product__name">Drawstring T-Short</a>
+                        <span class="product__price">$22.00</span>
+                    </div>
+                </div>
+    
+                <!--Product-8-->
+                <div class="product__box">
+                    <div class="product__img">
+                        <a href="#" class="add-cart">
+                            <i class="bx bx-cart"></i>
+                        </a>
+    
+                        <img src="assets/img/p-8.png" alt="">
+                    </div>
+    
+                    <div class="product__details">
+                        <a href="#" class="product__name">Drawstring T-Short</a>
+                        <span class="product__price">$22.00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--== SALE ==-->
+        <section class="sale-section">
+
+            <!--Sale-1-->
+            <div class="sale__box">
+                <img src="assets/img/sale-1.jpg" alt="">
+
+                <a href="#">
+                    <div class="sale__text">
+                        <strong>Bag With Rose Pattern</strong>
+                        <span>Sale off 25%</span>
+                    </div>
+                </a>
+            </div>
+
+            <!--Sale-2-->
+            <div class="sale__box">
+                <img src="assets/img/sale-2.jpg" alt="">
+
+                <a href="#">
+                    <div class="sale__text">
+                        <strong>Bag With Rose Pattern</strong>
+                        <span>Sale off 25%</span>
+                    </div>
+                </a>
+            </div>
+
+            <!--Sale-3-->
+            <div class="sale__box">
+                <img src="assets/img/sale-3.jpg" alt="">
+
+                <a href="#">
+                    <div class="sale__text">
+                        <strong>Bag With Rose Pattern</strong>
+                        <span>Sale off 25%</span>
+                    </div>
+                </a>
+            </div>
+        </section>
+
+        <!--== FEATURE ITEMS ==-->
+        <section class="new-arrival">
+            <div class="arrival__heading">
+                <strong>Feature Items</strong>
+                <p>We Provide You new Design Fashion Clothes</p>
+            </div>
+
+            <div class="product__container">
+                <!--Product-1-->
+                <div class="product__box">
+                    <div class="product__img">
+                        <a href="#" class="add-cart">
+                            <i class="bx bx-cart"></i>
+                        </a>
+    
+                        <img src="assets/img/p-1.png" alt="">
+                    </div>
+    
+                    <div class="product__details">
+                        <a href="#" class="product__name">Drawstring T-Short</a>
+                        <span class="product__price">$22.00</span>
+                    </div>
+                </div>
+    
+                <!--Product-2-->
+                <div class="product__box">
+                    <div class="product__img">
+                        <a href="#" class="add-cart">
+                            <i class="bx bx-cart"></i>
+                        </a>
+    
+                        <img src="assets/img/p-2.png" alt="">
+                    </div>
+    
+                    <div class="product__details">
+                        <a href="#" class="product__name">Drawstring T-Short</a>
+                        <span class="product__price">$22.00</span>
+                    </div>
+                </div>
+    
+                <!--Product-3-->
+                <div class="product__box">
+                    <div class="product__img">
+                        <a href="#" class="add-cart">
+                            <i class="bx bx-cart"></i>
+                        </a>
+    
+                        <img src="assets/img/p-3.png" alt="">
+                    </div>
+    
+                    <div class="product__details">
+                        <a href="#" class="product__name">Drawstring T-Short</a>
+                        <span class="product__price">$22.00</span>
+                    </div>
+                </div>
+    
+                <!--Product-4-->
+                <div class="product__box">
+                    <div class="product__img">
+                        <a href="#" class="add-cart">
+                            <i class="bx bx-cart"></i>
+                        </a>
+    
+                        <img src="assets/img/p-4.png" alt="">
+                    </div>
+    
+                    <div class="product__details">
+                        <a href="#" class="product__name">Drawstring T-Short</a>
+                        <span class="product__price">$22.00</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!--== BANNER ==-->
+        <!--Slide-->
+        <li class="item-a">
+            <div class="banner-box f-slide-3">
+                <div class="banner-text-container">
+        
+                    <div class="banner-text">
+                        <span>Limited offer</span>
+                        <strong>30% off<br> with <font>promo code</font></strong>
+                        <a href="#" class="banner__btn">Shop Now</a>
+                    </div>
+                    
+                </div>
+            </div>
+        </li>
+
+        <!--== SERVICES ==-->
+        <section class="services">
+            <!--Box-1-->
+            <div class="services__box">
+                <i class="bx bx-car"></i>
+                <span>Free Shipping</span>
+                <p>Free Shipping For All US orders</p>
+            </div>
+
+            <!--Box-2-->
+            <div class="services__box">
+                <i class="bx bx-support"></i>
+                <span>Support 24/7</span>
+                <p>We Support 24h a day</p>
+            </div>
+
+            <!--Box-3-->
+            <div class="services__box">
+                <i class="bx bx-sync"></i>
+                <span>100% money back</span>
+                <p>You have 30 days to Return</p>
+            </div>
+        </section>
+        
+        <!--== FOOTER ==-->
+        <footer>
+            <span class="copyright">
+                All Rights Reserved By Youssef O. &copy; 2020
+            </span>
+
+            <div class="subscribe">
+                <form action="#">
+                    <input type="email" placeholder="Example@gmail.com">
+                    <input type="submit" value="Subscribe">
+                </form>
+            </div>
+        </footer>
+
+    <!--== JS ==-->
+    <!--Jquery-->
+    <script src="assets/js/jquery.js"></script>
+    <script src="assets/js/lightslider.js"></script>
+    <script src="assets/js/main.js"></script>
+
+</body>
+</html>
